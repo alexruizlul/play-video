@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background-color: #003049;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu {
+    margin-inline-end: 30px;
+    text-align: right;
+}
+
+.header__menu--profile {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu ul {
+    display: none;
+    list-style: none;
+
+}
+
+.header__menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header__menu li a:hover {
+    text-decoration: underline;
+}
+
+.header__menu:hover ul, ul:hover {
+    display: block;
+}
