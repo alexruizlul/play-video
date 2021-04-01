@@ -69,3 +69,43 @@ body {
 ::placeholder {
     color: white;
 }
+
+.carousel {
+    overflow: scroll;
+    padding: 30px;
+    position: relative;    
+    width: 100%;
+}
+
+.carousel__container {
+    margin: 70px 0px;
+    padding-bottom: 15px;    
+    white-space: nowrap;
+}
+
+.carousel__item {
+    background-color: palegreen;
+    border: 6px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-block;
+    height: 250px;
+    margin-right: 10px;
+    overflow: hidden;
+    transform-origin: center left;
+    transition: 450ms all;
+    width: 200px;
+}
+
+.carousel__item:hover ~ .carousel__item {
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel__item {
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel__item:hover {
+    opacity: 1;
+    transform: scale(1.5);
+}
