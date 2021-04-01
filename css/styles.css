@@ -83,8 +83,7 @@ body {
     white-space: nowrap;
 }
 
-.carousel__item {
-    background-color: palegreen;
+.carousel-item {
     border: 6px solid white;
     border-radius: 25px;
     cursor: pointer;
@@ -92,20 +91,28 @@ body {
     height: 250px;
     margin-right: 10px;
     overflow: hidden;
+    position: relative;
     transform-origin: center left;
     transition: 450ms all;
     width: 200px;
 }
 
-.carousel__item:hover ~ .carousel__item {
+.carousel-item:hover ~ .carousel-item {
     transform: translate3d(100px, 0, 0);
 }
 
-.carousel__container:hover .carousel__item {
+.carousel__container:hover .carousel-item {
     opacity: 0.3;
 }
 
-.carousel__container:hover .carousel__item:hover {
+.carousel__container:hover .carousel-item:hover {
     opacity: 1;
     transform: scale(1.5);
+}
+
+.carousel-item__img {
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+
 }
