@@ -41,3 +41,31 @@ body {
 .header__menu:hover ul, ul:hover {
     display: block;
 }
+
+.main {
+    height: 300px;
+}
+
+.input {
+    outline: none;
+    border-radius: 25px;
+    border: 2px solid white;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0 20px;
+    height: 40px;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.input:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+::placeholder {
+    color: white;
+}
