@@ -1,12 +1,26 @@
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
 body {
     margin: 0;
-    background-color: #003049;
     font-family: 'Noto Sans JP', sans-serif;
     color: white;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .header {
     width: 100%;
+    background-color: #003049;
     height: 80px;
     padding: 20px;
     display: flex;
@@ -42,8 +56,16 @@ body {
     display: block;
 }
 
+main {
+    background: linear-gradient(#003049, #d62828);
+}
+
 .main {
     height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .input {
@@ -56,6 +78,7 @@ body {
     width: 75%;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
+    font-size: 16px;
 }
 
 .input:focus {
@@ -77,6 +100,10 @@ body {
     width: 100%;
 }
 
+.carousel__title {
+    padding: 30px;
+}
+
 .carousel__container {
     margin: 70px 0px;
     padding-bottom: 15px;    
@@ -84,7 +111,7 @@ body {
 }
 
 .carousel-item {
-    border: 6px solid white;
+    border: 2px solid #eae2b7;
     border-radius: 25px;
     cursor: pointer;
     display: inline-block;
@@ -144,4 +171,31 @@ body {
 .carousel-item__details:hover {
     opacity: 1;
     color: white;
+}
+
+.footer {
+    background-color: #d62828;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.carousel__container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel__container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 30px;
+    }
 }
