@@ -11,6 +11,39 @@
     <title>Login</title>
 </head>
 <body>
-    
+    <header class="header">
+        <img src="./img/logo.png" alt="Play-Video">
+    </header>
+    <main class="login">
+        <section class="login__container">
+            <h1>Inicia sesión</h1>
+            <form class="login__container--form" action="">
+                <input class="input" type="email" name="email" id="email" placeholder="Correo">
+                <input class="input" type="password" name="password" id="password" placeholder="Contraseña">
+                <button class="button">Iniciar sesión</button>
+                <!-- <input type="submit" value="Iniciar sesión"> -->
+                <div class="login__container--remember-me">
+                    <label for="remember">
+                        <input type="checkbox" name="remember" id="remember"> Recuérdame
+                    </label>
+                    <a href="#">Olvidé mi contraseña</a>
+                </div>
+            </form>
+            <section class="login__container--social-media">
+                <div>
+                    <img src="./img/icons8-google-plus-50.png" alt="Google"><a href="#">Iniciar sesión con Google</a>
+                </div>
+                <div>
+                    <img src="./img/icons8-twitter-50.png" alt="Twitter"><a href="#">Iniciar sesión con Twitter</a>
+                </div>
+            </section>
+                <p class="login__container--register">No tengo cuenta - <a href="#">Regístrate</a></p>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="#">Términos de uso</a>
+        <a href="#"> Declaración de privacidad</a>
+        <a href="#">Centro de ayuda</a>
+    </footer>
 </body>
 </html>
